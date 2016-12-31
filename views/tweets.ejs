@@ -1,0 +1,20 @@
+<!-- views/tweets.ejs -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="/css/site.css">
+	</head>
+	<body>
+		<header></header>
+		<main>
+			<form id="tweet-form" action="/tweets/create" method="POST">
+				<input id="tweet-form-handle" type="text" name="handle" placeholder="MurgioMurmani">
+				<textarea id="tweet-form-body" name="body" placeholder="What's happening?"></textarea>
+				<button id="tweet-form-button">Tweet</button>
+			</form>
+			<% for(var i = 0; i < tweets.length; i++) { %>
+        		<%- include('_tweet', { tweet: tweets[i] }); %>
+      		<% } %>
+		</main>
+	</body>
+</html>
