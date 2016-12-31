@@ -1,4 +1,4 @@
-# Twitter-Clone
+# Small Twitter Clone
 ![screenshot_twitterClone](https://raw.githubusercontent.com/Murgio/Twitter-Clone/master/images/screenshot.png)
 
 ##### A Twitter clone made in one week with some basic Twitter features
